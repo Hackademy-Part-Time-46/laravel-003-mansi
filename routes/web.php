@@ -37,6 +37,6 @@ Route::get('/', function () {
 //     return view('matera');
 // })->name('matera');
 
-Route::get('/provincia/{nome}', function ($nome) {
+Route::get('/provincia-regioni/{nome}', function ($nome) {
     return view('show', ['nome' => $nome]);
 })->name('show');

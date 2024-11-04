@@ -15,7 +15,10 @@
         <h3>{{ $nome_regione }}</h3>
         <ul>
             @foreach ($provincia as $singola)
-                <li><a href="/provincia/{{ $singola }}">{{ $singola }}</a></li>
+                <li>
+                    <a href="{{ route('show', ['nome' => $singola]) }}">{{ $singola }}</a>
+                    {{-- <a href="/provincia/{{ $singola }}">{{ $singola }}</a> --}}
+                </li>
             @endforeach
         </ul>
     @endforeach
